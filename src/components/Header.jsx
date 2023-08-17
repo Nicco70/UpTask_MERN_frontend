@@ -9,7 +9,7 @@ const Header = () => {
     const { cerrarSesionAuth } = useAuth()
 
     const handleCerrarSesion = () => {
-        if (confirm("Poista?")) {
+        if (confirm("¿Esta seguro que quiere Cerrar la sesion?")) {
             cerrarSesionAuth()
             cerrarSesionProyectos()
             localStorage.removeItem('token')

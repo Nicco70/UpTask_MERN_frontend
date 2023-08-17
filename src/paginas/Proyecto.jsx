@@ -34,7 +34,7 @@ const Proyecto = () => {
   useEffect(() => {
     if(!proyecto.nombre || cargando) return
 
-    socket.on("tarea-agregada", tareaNueva => {
+    socket.on('tarea-agregada', tareaNueva => {
           submitTareasProyecto(tareaNueva)
     })
 
